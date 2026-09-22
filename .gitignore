@@ -1,0 +1,14 @@
+# Notebook and Python artifacts
+.ipynb_checkpoints/
+__pycache__/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Word lock files
+~$*.docx
+
+# Large archives (commit selected files instead)
+*.zip
+*.tar.gz
