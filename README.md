@@ -1,22 +1,23 @@
-# [Novel protein name]: Find-a-Gene analysis in [Source species]
+# BDNF: Find-a-Gene analysis in Carcharhinus Cautus
 
 ] **Template:** replace every item in angle brackets `[ ]`, then delete this line. See [GETTING_STARTED.md](GETTING_STARTED.md) for how to add files.
 
 BIFX-550 Computational Functional Genomics, Hood College, Fall 2026
-Author: [Your name] ([GitHub username])
+Author: Fiona Corcoran (ficorcoran)
 
 ## Summary
 
-[Two or three sentences: the starting protein you searched with, the novel candidate you found and in which organism, and your key finding.]
+This project aimed to identify the gene Brain Derived Neurotrophic Factor (BDNF) in a species which it had not been described, using homo sapiens as a reference. A shark which had recently had its genome sequenced--Carcharhinus cautus (Nervous Shark)--was identified as a candidate. As the shark had a whole genome sequence GCA_988281185.1, but had not yet been added to the BLAST database, the genome was downloaded as a FASTA file and tblastn was run locally, finding a strong match. This candidate was then confirmed with reciprocal best hit and analyzing the function of the sequences with the greatest amount of changes.
+
 
 | Item | Value |
 |---|---|
-| Starting protein | [Protein name] |
-| Starting species | [e.g., Homo sapiens] |
-| Starting accession | [UniProt or NCBI accession] |
+| Starting protein | Brain Derived Neurotrophic Factor (BDNF) |
+| Starting species | Homo Sapiens |
+| Starting accession | NP_001700.2 |
 | Novel candidate | [Name, or "hypothetical protein" / "unnamed"] |
-| Source organism | [Species] |
-| Source nucleotide record | [WGS or TSA accession and coordinates] |
+| Source organism | Carcharhinus cautus |
+| Source nucleotide record | GCA_988281185.1 |
 | Novelty evidence | [BLASTp top hit in nr: annotation, % identity, E-value] |
 | Structure prediction | [Tool; mean pLDDT or QMEAN] |
 | Closest PDB entry | [PDB ID] |
