@@ -1,0 +1,146 @@
+TBLASTN 2.17.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: ref/nervous_shark.fna
+           622 sequences; 2,887,078,191 total letters
+
+
+
+Query= NP_001700.2 neurotrophic factor BDNF precursor form isoform a
+preproprotein [Homo sapiens]
+
+Length=247
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+OZ558480.1 Carcharhinus cautus genome assembly, chromosome: 8         300     2e-91
+OZ558504.1 Carcharhinus cautus genome assembly, chromosome: 37        189     1e-52
+OZ558490.1 Carcharhinus cautus genome assembly, chromosome: 19        142     2e-36
+OZ558493.1 Carcharhinus cautus genome assembly, chromosome: 22        115     3e-27
+
+
+>OZ558480.1 Carcharhinus cautus genome assembly, chromosome: 8
+Length=130619453
+
+ Score = 300 bits (767),  Expect = 2e-91, Method: Compositional matrix adjust.
+ Identities = 172/259 (66%), Positives = 200/259 (77%), Gaps = 21/259 (8%)
+ Frame = +1
+
+Query  1          MTILFLTMVISYFGCMKAAPMKEANIRGQGGLAYPGVRTHGTLESVNGPKAGSRGLTSLA  60
+                  M+ILFLTMVIS FGC+ AAPM EA  RG G   YPG    G                +LA
+Sbjct  122450059  MSILFLTMVISSFGCLNAAPMTEAGGRGDGASLYPGFLDGGGRGDGL---------GALA  122450211
+
+Query  61         DTFEHVIEELLDEDQKVRPNEEN------------NKDADLYTSRVMLSSQVpleppllf  108
+                  +T EHV+EELL+ + +  P++              +K+ADLY+SRVMLS QVPLEPPLLF
+Sbjct  122450212  NTVEHVLEELLEVEPEAGPSDRGGGGGAGGGGGGGDKEADLYSSRVMLSGQVPLEPPLLF  122450391
+
+Query  109        lleeYKNYLDAANMSMRVRRHSDPARRGELSVCDSISEWVTAADKKTAVDMSGGTVTVLE  168
+                  L+EEY+NYLD+ANMS RVRRHSDPARRGELSVCDSIS+WVTA  KK+AVDMSG TV+VLE
+Sbjct  122450392  LMEEYRNYLDSANMSARVRRHSDPARRGELSVCDSISQWVTADKKKSAVDMSGQTVSVLE  122450571
+
+Query  169        KVPVSKGQLKQYFYETKCNPMGYTKEGCRGIDKRHWNSQCRTTQSYVRALTMDSKKRIGW  228
+                  K+ V  GQLKQYFYET+CNP G+T EGCRGIDK+HWNSQC+T+QSYVRALT+DS+K+IGW
+Sbjct  122450572  KILVQNGQLKQYFYETRCNPKGFTNEGCRGIDKKHWNSQCKTSQSYVRALTIDSRKKIGW  122450751
+
+Query  229        RFIRIDTSCVCTLTIKRGR  247
+                  RFIRIDTSCVCTLT KRGR
+Sbjct  122450752  RFIRIDTSCVCTLTFKRGR  122450808
+
+
+>OZ558504.1 Carcharhinus cautus genome assembly, chromosome: 37
+Length=23042405
+
+ Score = 189 bits (479),  Expect = 1e-52, Method: Compositional matrix adjust.
+ Identities = 118/260 (45%), Positives = 161/260 (62%), Gaps = 29/260 (11%)
+ Frame = +1
+
+Query  1         MTILFLTMVISYFGCMKAAPMKEANI---RGQGGLAYPGVRTHGTLESVNGPKAGSRGLT  57
+                 M  L   MVI Y G  KAAP++  +    RG   L  P VR  G  E     +       
+Sbjct  15410434  MIPLLYAMVILYLGITKAAPLQPNSTLRNRGSTPLDEP-VRQSGLSEDEETRR-------  15410589
+
+Query  58        SLADTFEHVIEELLDEDQKVRPNEENN----KDADLYTSRVMLSSQVpleppllflleeY  113
+                       E++++E++ + Q +  ++++     K+ D Y+ RV L+++ P  PP LF++EE 
+Sbjct  15410590  ------EYLLDEMVADIQALGGSDDDEDASGKEWDFYSPRVTLAARPPGVPPFLFIMEES  15410751
+
+Query  114       KNYLDAANMSMRVRRHS-----DPARRGELSVCDSISEWVTAADKKTAVDMSGGTVTVLE  168
+                  +    AN + R +R +     DP+RRG+LSVCDSIS+WVT  D++ AVD+ G  VTV+ 
+Sbjct  15410752  LSQAHVANRTWRAKRQAGASSVDPSRRGDLSVCDSISQWVT--DRRAAVDVHGKMVTVMI  15410925
+
+Query  169       KVPVSKGQLKQYFYETKCNPMGYTKEG-CRGIDKRHWNSQCRTTQSYVRALTMDSKKRIG  227
+                  VP S G LKQYFYETKCN    T +G CRG+DKRHW S+C+T QSYVRALTMD++KR G
+Sbjct  15410926  DVPTSTGPLKQYFYETKCNERSTTAQGGCRGVDKRHWISECKTKQSYVRALTMDTQKRAG  15411105
+
+Query  228       WRFIRIDTSCVCTLTIKRGR  247
+                 WR+IRI+TSCVCTL  + GR
+Sbjct  15411106  WRWIRINTSCVCTLINRTGR  15411165
+
+
+>OZ558490.1 Carcharhinus cautus genome assembly, chromosome: 19
+Length=54440117
+
+ Score = 142 bits (357),  Expect = 2e-36, Method: Compositional matrix adjust.
+ Identities = 66/135 (49%), Positives = 94/135 (70%), Gaps = 3/135 (2%)
+ Frame = +3
+
+Query  114       KNYLDAANMSMRVRRHSDP-ARRGELSVCDSISEWVTAADKKTAVDMSGGTVTVLEKVPV  172
+                 +++ +  N + R +R+++    RGE SVCDS S WVT  D+  A+D+ G  VTVL ++  
+Sbjct  41139972  EDFAEMDNRTARRKRYAEHRGHRGEYSVCDSESRWVT--DRTAAIDIRGRQVTVLGEIKT  41140145
+
+Query  173       SKGQLKQYFYETKCNPMGYTKEGCRGIDKRHWNSQCRTTQSYVRALTMDSKKRIGWRFIR  232
+                     +KQYFYET+C      K GCRGID +HWNSQC+T+Q+YVRAL+ ++ K +GWR+IR
+Sbjct  41140146  GNSAIKQYFYETRCREAKPVKSGCRGIDDKHWNSQCKTSQTYVRALSTENNKYVGWRWIR  41140325
+
+Query  233       IDTSCVCTLTIKRGR  247
+                 IDTSC+C L+ K G+
+Sbjct  41140326  IDTSCLCALSRKLGK  41140370
+
+
+>OZ558493.1 Carcharhinus cautus genome assembly, chromosome: 22
+Length=51217570
+
+ Score = 115 bits (288),  Expect = 3e-27, Method: Compositional matrix adjust.
+ Identities = 66/162 (41%), Positives = 93/162 (57%), Gaps = 6/162 (4%)
+ Frame = -1
+
+Query  86        DADLYTSRVMLSSQVplepp--llflleeYKNYLDAANMSMRVRRHSDPARR-GELSVCD  142
+                 +ADL+  R + SS+V  +            + +  A+++S R++RH+   R  G+ SVCD
+Sbjct  14441509  EADLFRKRPVHSSRVRFQSECLGELAARNPRAWQAASSLSPRLKRHAGRVRHSGQFSVCD  14441330
+
+Query  143       SISEWVTAADKKTAVDMSGGTVTVLEKVPVSKGQLKQYFYETKCNPMGYTKEGCRGIDKR  202
+                     WV   +K+ A+D+ G  V VL    V+   ++Q F+ET C     T++GCRGID R
+Sbjct  14441329  KEHRWVL--NKEVALDIRGREVNVLSHFYVNGTLIRQMFFETTCKKRKPTRQGCRGIDSR  14441156
+
+Query  203       HWNSQCRTTQSYVRALTMDSKKRIGWRFIRIDTSCVCTLTIK  244
+                 HWNS C TT S+V AL  D+   I W FIRI T+CVC LT K
+Sbjct  14441155  HWNSHCDTTDSHVHALVRDNNF-IRWNFIRIRTACVCVLTRK  14441033
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.394    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 114511293939
+
+
+  Database: ref/nervous_shark.fna
+    Posted date:  Sep 25, 2026  1:18 PM
+  Number of letters in database: 2,887,078,191
+  Number of sequences in database:  622
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40
