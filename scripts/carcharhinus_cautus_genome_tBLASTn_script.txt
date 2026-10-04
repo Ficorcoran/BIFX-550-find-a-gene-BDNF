@@ -1,0 +1,48 @@
+## download the shark genome
+curl --http1.1 -L \
+    --retry 5 \
+    --retry-all-errors \
+    -C - \
+    -o ref/nervous_shark.fna.gz \
+    "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/988/281/185/GCA_988281185.1_Carcharhinus_cautus_haplotype_2_assembly/GCA_988281185.1_Carcharhinus_cautus_haplotype_2_assembly_genomic.fna.gz"
+
+
+## unzip
+gunzip ref/nervous_shark.fna.gz
+
+## make a blast DB out of the genome
+makeblastdb \
+    -in ref/nervous_shark.fna \
+    -dbtype nucl \
+    -parse_seqids \
+    -out ref/nervous_shark_db
+
+##download human BDNF
+efetch -db protein -id NP_001700.2 -format fasta > ref/query_human_BDNF_NP_001700.2.fasta
+
+##tblastn with the shark
+tblastn \
+    -query ref/query_human_BDNF_NP_001700.2.fasta \
+    -db ref/nervous_shark_db \
+    -matrix BLOSUM62 \
+    -word_size 3 \
+    -evalue 1e-5 \
+    -max_target_seqs 100 \
+    -out tblastn_carcharhinus_cautus_assembly_hits.txt
+
+##create a FA with the result
+##numbers obtained from alignment
+blastdbcmd \
+    -db ref/nervous_shark_db \
+    -entry OZ558480.1 \
+    -range 122450059-122450808 \
+    -strand plus \
+    -out novel_carcharhinus_cautus_OZ558480.1-122450059-122450808_nuc.fna
+
+##translate into amino acids
+transeq \
+    -sequence novel_carcharhinus_cautus_OZ558480.1-122450059-122450808_nuc.fna \
+    -outseq novel_carcharhinus_cautus_OZ558480.1-122450059-122450808.faa \
+    -frame 1
+
+
